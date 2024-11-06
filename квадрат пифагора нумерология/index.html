@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/datepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main2.min.css" media="screen, projection, print">
+    <title>Квадрат Пифагора</title>
+
+</head>
+
+<body>
+    <div class="matrix">
+        <h2 class="matrix__title">Квадрат Пифагора</h2>
+
+        <div class="wrapper matrix__wrapper">
+            <div class="matrix__form">
+                <input class="matrix__input matrix_date" placeholder="Введите дату рождения" />
+                <div class="matrix__button_wrap"><button class="matrix__button">Рассчитать</button></div>
+            </div>
+            <div class="result">
+                <div class="result__loader">
+                    <div class="result__image"> </div>
+                </div>
+                <div class="result__hidden">
+                    <p class="matrix__text"> </p>
+                    <div class="result__wrap">
+                        <div class="result__left">
+                            <div class="result__big">
+                                <div class="result__row result__flex">
+                                    <div class="result__info">Дата рождения</div>
+                                    <div class="result__answer" data-answer="date"> </div>
+                                </div>
+                                <div class="result__row result__flex">
+                                    <div class="result__info">Доп. числа</div>
+                                    <div class="result__answer" data-answer="second-number"> </div>
+                                </div>
+                                <div class="result__row result__flex">
+                                    <div class="result__info">Число судьбы</div>
+                                    <div class="result__answer" data-answer="destiny-number"> </div>
+                                </div>
+                            </div>
+                            <div class="result__cube">
+                                <div class="result__row">
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Характер</h4>
+                                            <p data-index="0" class="kv_1"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Здоровье</h4>
+                                            <p data-index="3" class="kv_2"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Удача</h4>
+                                            <p data-index="6" class="kv_3"> </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="result__row">
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Энергия</h4>
+                                            <p data-index="1" class="kv_4"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Логика</h4>
+                                            <p data-index="4" class="kv_5"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Долг</h4>
+                                            <p data-index="7" class="kv_6"> </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="result__row">
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Интерес</h4>
+                                            <p data-index="2" class="kv_7"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Труд</h4>
+                                            <p data-index="5" class="kv_8"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Память</h4>
+                                            <p data-index="8" class="kv_9"> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result__row">
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Самооценка</h4>
+                                            <p class="d_p3"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Быт</h4>
+                                            <p data-index="10" class="d_p4"> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="result__item">
+                                        <div class="result__context">
+                                            <h4>Талант </h4>
+                                            <p class="d_p2"> </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="result__right">
+                            <div class="result__item result__item_full">
+                                <div class="result__context">
+                                    <h4 class="top">Темперамент</h4>
+                                    <p data-index="9" class="kv_10"> </p>
+                                </div>
+                            </div>
+                            <div class="result__item result__item_full">
+                                <div class="result__context">
+                                    <h4 class="top">Цель</h4>
+                                    <p data-index="12" class="kv_11"> </p>
+                                </div>
+                            </div>
+                            <div class="result__item result__item_full">
+                                <div class="result__context">
+                                    <h4 class="top">Семья</h4>
+                                    <p data-index="11" class="kv_12"> </p>
+                                </div>
+                            </div>
+                            <div class="result__item result__item_full">
+                                <div class="result__context">
+                                    <h4 class="top">Привычки</h4>
+                                    <p data-index="13" class="kv_13"> </p>
+                                </div>
+                            </div>
+                            <div class="result__item result__item_full" style="background: #A39A92;">
+                                <div class="result__context">
+                                    <h4 class="result__info">Духовность </h4>
+                                    <p class="d_p1"> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br />
+
+
+    <br>
+    <br>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
